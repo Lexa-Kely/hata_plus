@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Компанія с продажу та будівництвом будинків на замовлення</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="wrapper">
-                <ul>
+            <div class="wrapper flex">
+                <ul class="mainmenu flex">
                     <li><a href="#">Головна</a></li>
-                    <li>Про компанію</li>
-                    <li>Наші будівлі</li>
-                    <li>Акції</li>
-                    <li>Контакти</li>
+                    <li><a href="#">Про компанію</a></li>
+                    <li><a href="#">Наші будівлі</a></li>
+                    <li><a href="#">Акції</a></li>
+                    <li><a href="#">Контакти</a></li>
                 </ul>
                 <div class="social">
                     <a href="#"><img src="image/fb.png" alt="значок фейсбука"></a>
@@ -26,8 +26,8 @@
                 </div>
             </div>
         </nav>
-        <div class="wrapper">
-            <a href="index.html"><img src="image/logo.png" alt="лого хата+"></a>
+        <div class="wrapper header_content flex">
+            <a class="logo" href="index.html"><img src="image/logo.png" alt="лого хата+"></a>
             <div class="tel">
                 <a href="tel:+380971002525"><img src="image/phone.png" alt="значок телефону">+38(097) 100-25-25</a>
                 <a href="tel:+380971002525">+38(097) 100-25-25</a>
@@ -40,38 +40,75 @@
             </div>
             <div><a class="button" href="#">Замовити дзвінок</a></div>
         </div>
+        <div class="banner">
+            <p class="sale">Пропозиція місяця</p>
+            <p class="info">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
+            <p class="price"><b>5999грн</b> м<sup>2</sup></p>
+        </div>
     </header>
     <main>
-        <div class="banner">
-            <p>Пропозиція місяця</p>
-            <p>Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-            <p><b>5999грн</b>/ м<sup>2</sup></p>
-        </div>
-        <div class="wrapper">
-            <section>
-                <h1>Компанія “Хата Плюс”</h1>
 
+        <div class="wrapper flex">
+            <div>
+                <article class="description">
+                    <h1>Компанія “Хата Плюс”</h1>
+                    <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
+                        гармонії з
+                        природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала
+                        справжньою
+                        віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.</p>
+                    <p>
 
-                <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
-                    гармонії з
-                    природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала справжньою
-                    віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.</p>
-                <p>
-                    Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова пропозиція по
-                    співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна ділянка,
-                    на
-                    якому
-                    можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити альтанку і
-                    барбекю.
-                </p>
-                <a href="#">Детальніше про нас</a>
-            </section>
+                        Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова пропозиція
+                        по
+                        співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна
+                        ділянка,
+                        на
+                        якому
+                        можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити
+                        альтанку і
+                        барбекю.
+                    </p>
+                    <a href="#">Детальніше про нас</a>
+                </article>
+                <h2>Популярні проекти</h2>
+                <section class="houses flex wrap">
+                    <figure>
+                        <a href="#"></a>
+                        <img src="image/edmonton.png" alt="двох поверховий будинок на бетоній основі EDMONTON">
+                        <figcaption>
+                            <h3>
+                                EDMONTON (338 м <sup>2</sup>)
+                            </h3>
+                            <p>Загальна площа будови: 312 м<sup>2</sup></p>
+                            <p>Кількість спалень: 4</p>
+                            <p>Гараж: 2 авто</p>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="image/montreal.png" alt="двох поверховий будинок на бетоній основі">
+                        <figcaption>
+                            <h3>MONTREAL (332 м<sup>2</sup>)</h3>
+                            <p>Загальна площа будови: 290 м<sup>2</sup></p>
+                            <p>Кількість спалень: 3</p>
+                            <p>Гараж: 2 авто</p>
+                        </figcaption>
+                    </figure>
+                    <figure><img src="image/galgary.png" alt="двох поверховий будинок на цеглевій основі">
+                        <figcaption>
+                            <h3>CALGARY (294 м<sup>2</sup>)</h3>
+                            <p>Загальна площа будови: 272 м<sup>2</sup></p>
+                            <p>Кількість спалень: 3</p>
+                            <p>Гараж: 2 авто</p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </div>
             <aside>
                 <b>Категорії проектів</b>
                 <ul>
                     <li><a href="#">Генеральний план</a></li>
                     <li>
-                        <a href="#">Навколишнє середовище</a>
+                        <a class="burger" href="#">Навколишнє середовище</a>
                         <ul class="supmenu">
                             <li><a href="#">Продані</a></li>
                             <li><a href="#">Заброньованні</a></li>
@@ -80,39 +117,15 @@
                     </li>
                     <li><a href="#">Умови придбання</a></li>
                     <li><a href="#">Загородні котеджі</a></li>
-                    <li><a href="#">>Інфраструктура</a> </li>
+                    <li><a href="#">Інфраструктура</a> </li>
                     <li><a href="#">Готові будинки</a></li>
                 </ul>
             </aside>
-            <section>
-                <h2>Популярні проекти</h2>
-                <figure> <a href="#"></a><img src="image/edmonton.png"
-                        alt="двох поверховий будинок на бетоній основі EDMONTON">
-                    <figcaption>
-                        <h3>EDMONTON (338 м <sup>2</sup>)</h3>
-                        <p>Загальна площа будови: 312 м<sup>2</sup></p>
-                        <p>Кількість спалень: 4</p>
-                        <p>Гараж: 2 авто</p>
-                    </figcaption>
-                </figure>
-                <figure><img src="image/montreal.png" alt="двох поверховий будинок на бетоній основі">
-                    <h3>>MONTREAL (332 м<sup>2</sup>)</h3>
-                    <p>Загальна площа будови: 290 м<sup>2</sup></p>
-                    <p>Кількість спалень: 3</p>
-                    <p>Гараж: 2 авто</p>
-                </figure>
-                <figure><img src="image/galgary.png" alt="двох поверховий будинок на цеглевій основі">
-                    <a href="#">CALGARY (294 м<sup>2</sup>)</a>
-                    <p>Загальна площа будови: 272 м<sup>2</sup></p>
-                    <p>Кількість спалень: 3</p>
-                    <p>Гараж: 2 авто</p>
 
-                </figure>
-            </section>
         </div>
     </main>
     <footer>
-        <div class="wrapper">
+        <div class="wrapper flex">
             <ul>
                 <li><a href="#">Будинки</a></li>
                 <li><a href="#">Інфраструктура</a></li>
@@ -125,15 +138,13 @@
                 <li><a href="#">Страхування</a></li>
                 <li><a href="#">Контакти</a></li>
             </ul>
-            <div class="number">
-                <a href="tel:+380971002525">+38(097) 100-25-25 </a><img src="image/phone.png" alt="значок телефону">
+            <div class="tel">
+                <a href="tel:+380971002525">+38(097) 100-25-25 <img src="image/phone.png" alt="значок телефону"></a>
                 <a href="tel:+380971002525">+38(097) 100-25-25</a>
             </div>
-            <div class="contacts">
-                <a href="email:hataplus@hata.com.ua"><img src="image/email.png"
-                        alt="значок пошти">hataplus@hata.com.ua</a>
-
-                <a href="#">hataplus</a><img src="image/skype.png" alt="значок скайпа">
+            <div class="messangers">
+                <a href="email:hataplus@hata.com.ua" alt="значок пошти">hataplus@hata.com.ua</a>
+                <a href="#">hataplus<img src="image/skype.png" alt="значок скайпа"></a>
             </div>
         </div>
         <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>

@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1px;
+}
+
+body {
+    background-color: #fff;
+}
+
+a {
+    color: #b1b1d2;
+    font-size: 14px;
+    font-family: "Arial";
+    line-height: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+p {
+    font-family: "Arial";
+    font-size: 14rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
+}
+
+li {
+    color: #fff;
+    font-family: "Arial";
+    list-style-type: none;
+    font-size: 14rem;
+    line-height: 24px;
+}
+
+h2 {
+    display: flex;
+    color: #24242b;
+    font-size: 24rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    line-height: 24rem;
+}
+
+h3 {
+    font-size: 14rem;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+    line-height: 24rem;
+}
+
+
+.wrapper {
+    margin: auto;
+    max-width: 1280px;
+    width: 80%;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 20px 0;
+    background-color: #1f1f56;
+}
+
+.mainmenu li {
+    margin: 0 13px;
+}
+
+.social img {
+    margin: 0 20px;
+}
+
+
+.supmenu a {
+    color: #b1b1d2;
+}
+
+header a {
+    font-size: 18rem;
+    font-weight: bold;
+    font-family: "Arial";
+    line-height: 24px;
+}
+
+.header_content {
+    padding: 40px 0;
+}
+
+.header_content a {
+    color: #25252c;
+}
+
+
+.tel {
+    display: flex;
+    flex-direction: column;
+    font-size: 16rem;
+    text-decoration: underline;
+}
+
+.tel img {
+    margin: 0 10px;
+}
+
+.messangers {
+    display: flex;
+    flex-direction: column;
+}
+
+.messangers img {
+    margin: 0 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+}
+
+.button:hover {
+    color: #1f1f56;
+    background-color: #fd8300;
+}
+
+
+.banner {
+    padding: 60px 0 40px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/banner.webp);
+}
+
+.banner {
+    color: #ffffff;
+}
+
+.price {
+    color: #fd8300;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.banner b {
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 40rem;
+    line-height: 24rem;
+}
+
+main {
+    margin: 35px 0;
+}
+
+.sale {
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    font-size: 30rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.info {
+    margin: 15px 0;
+}
+
+article {
+    border-bottom: #e4e4ec solid 1px;
+}
+
+article a {
+    display: block;
+    margin: 25px 0;
+    text-decoration: underline;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: #24242b;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.description,
+.houses {
+    width: 75%;
+}
+
+.description p {
+    color: #666666;
+}
+
+.description a {
+    color: #fd8300;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fd8300;
+}
+
+aside {
+    display: inline-block;
+    justify-content: space-between;
+    width: 23%;
+    min-width: 220px;
+}
+
+aside b {
+    display: block;
+    padding: 10px 60px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    font-size: 16rem;
+    background-color: #1f1f56;
+    border-radius: 3px;
+    line-height: 24px;
+}
+
+aside li {
+    padding: 15px;
+    background-color: #e4e4ec;
+}
+
+.burger {
+    background-color: #fd8300;
+}
+
+aside a {
+    color: #25252c;
+}
+
+.supmenu a {
+    color: #666666;
+}
+
+aside li:hover {
+    background-color: #cecedd;
+}
+
+h2 {
+    margin: 25px 0;
+}
+
+.houses {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+figure a {
+    color: #1f1f56;
+    font-weight: bold;
+}
+
+figure a:hover {
+    color: #1f1f56;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ededf5;
+}
+
+footer a {
+    color: #666666;
+    line-height: 26rem;
+}
+
+footer .wrapper {
+    padding: 35px 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.tel a {
+    font-size: 18rem;
+    font-weight: bold;
+    color: #25252c;
+}
+
+.contacts a {
+    font-size: 16rem;
+    text-decoration: underline;
+    color: #25252c;
+}
+
+footer p {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #dcdce6;
+}
