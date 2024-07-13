@@ -10,6 +10,9 @@ html {
 
 body {
     background-color: #fff;
+    font-family: "Arial";
+    font-size: 14rem;
+    line-height: 24rem;
 }
 
 a {
@@ -22,12 +25,6 @@ a {
 }
 
 
-p {
-    font-family: "Arial";
-    font-size: 14rem;
-    letter-spacing: 2rem;
-    line-height: 24rem;
-}
 
 li {
     color: #fff;
@@ -66,6 +63,7 @@ h3 {
 .flex {
     display: flex;
     justify-content: space-between;
+    gap: 26px;
 }
 
 nav {
@@ -73,13 +71,9 @@ nav {
     background-color: #1f1f56;
 }
 
-.mainmenu li {
-    margin: 0 13px;
-}
-
 .social a {
     display: block;
-    margin: 0 10px;
+    margin: 0 5px;
     background: url(../image/sprite.png) no-repeat;
 }
 
@@ -150,6 +144,10 @@ header a {
     text-decoration: underline;
 }
 
+.tel a:last-child {
+    padding: 0 35px;
+}
+
 .tel:after {
     content: "";
     border-right: 1px solid #e4e4ec;
@@ -173,6 +171,11 @@ a.em {
     position: relative;
 }
 
+a.sk {
+    padding-left: 30px;
+    position: relative;
+}
+
 a.em::before {
     content: "";
     display: block;
@@ -182,21 +185,22 @@ a.em::before {
     width: 18px;
     height: 13px;
     background: url(../image/sprite.emsk.png);
-    background-position: 0 0px;
+    background-position: 0 -25px;
     transform: translateY(-50%);
-    transition: 0.3s;
 }
 
 a.sk::before {
-    
-}
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 13px;
+    background: url(../image/sprite.emsk.png);
+    background-position: -25px -30px;
+    transform: translateY(-50%);
 
-a.em:hover::before {
-    background-position: 0 -25px;
-}
-
-a.sk:hover {
-    background-position: -23px -25px;
 }
 
 .button {
@@ -213,14 +217,12 @@ a.sk:hover {
 
 
 .banner {
+    color: #ffffff;
     padding: 60px 0 40px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/banner.webp);
 }
 
-.banner {
-    color: #ffffff;
-}
 
 .price {
     color: #fd8300;
@@ -260,7 +262,7 @@ article {
 
 article a {
     display: block;
-    margin: 25px 0;
+    margin: 20px 0;
     text-decoration: underline;
 }
 
@@ -273,15 +275,15 @@ h1 {
     font-size: 30px;
     font-weight: 700;
     font-family: "Roboto Slab";
-}
-
-.description,
-.houses {
-    width: 75%;
+    margin-bottom: 20px;
 }
 
 .description p {
     color: #666666;
+}
+
+.description:first-child p {
+    padding-bottom: 10px;
 }
 
 .description a {
@@ -298,6 +300,7 @@ aside {
     display: inline-block;
     overflow: hidden;
     justify-content: space-between;
+    border-radius: 3px;
     width: 23%;
     min-width: 220px;
 }
@@ -339,14 +342,13 @@ aside li:hover {
 }
 
 aside b {
-    display: inline-block;
-    padding: 10px 60px;
+    display: block;
+    padding: 15px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
     font-size: 16rem;
     background-color: #1f1f56;
-    border-radius: 3px;
     line-height: 24px;
 }
 
@@ -354,6 +356,7 @@ aside li {
     padding: 15px;
     background-color: #e4e4ec;
 }
+
 
 aside a {
     color: #25252c;
@@ -367,13 +370,19 @@ aside a:hover {
     display: none;
 }
 
-.supmenu a {
-    color: #666;
-}
 
 aside li:hover {
     background-color: #fd8300;
     color: #fff;
+}
+
+aside li:hover a {
+    color: #fff;
+}
+
+
+ul li:last-child {
+    border: none;
 }
 
 li:hover .supmenu {
@@ -382,6 +391,10 @@ li:hover .supmenu {
 
 .supmenu li:hover {
     background-color: #cecedd;
+}
+
+.supmenu a {
+    color: #666;
 }
 
 h2 {
@@ -393,15 +406,32 @@ h2 {
     margin-bottom: 45px;
 }
 
-figure a {
-    color: #1f1f56;
-    font-weight: bold;
+figure {
+    width: 30%;
 }
+
+figure img {
+    width: 100%;
+}
+
+figcaption p:nth-child(odd) {
+    margin: 5px 0;
+}
+
 
 figure a:hover {
     color: #1f1f56;
     text-decoration: underline;
 }
+
+
+figure p {
+    color: #9999a6;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
 
 footer {
     background-color: #ededf5;
@@ -424,7 +454,9 @@ footer a:hover {
     font-size: 18rem;
     font-weight: bold;
     color: #25252c;
+    text-decoration: none;
 }
+
 
 .contacts a {
     font-size: 16rem;
@@ -436,9 +468,22 @@ footer p {
     padding: 15px 0;
     text-align: center;
     background-color: #dcdce6;
+    color: #9999a6;
 }
 
 
 a.em::before:hover {
     background-position: 1px 25px;
+}
+
+.messangers a:hover {
+    color: #fd8300
+}
+
+.tel a:hover {
+    color: #fd8300;
+}
+
+.list a:hover {
+    color: #fd8300;
 }
