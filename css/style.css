@@ -31,7 +31,7 @@ li {
     font-family: "Arial";
     list-style-type: none;
     font-size: 14rem;
-    line-height: 24px;
+    line-height: 24rem;
     transition: 0.3s;
 }
 
@@ -118,6 +118,13 @@ header a {
     line-height: 24px;
 }
 
+.mainmenu a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
 .header_content {
     position: relative;
     padding: 40px 0;
@@ -141,7 +148,6 @@ header a {
     display: flex;
     flex-direction: column;
     font-size: 16rem;
-    text-decoration: underline;
 }
 
 .tel a:last-child {
@@ -167,6 +173,7 @@ header a {
 }
 
 a.em {
+    text-decoration: underline;
     padding-left: 30px;
     position: relative;
 }
@@ -196,9 +203,9 @@ a.sk::before {
     top: 50%;
     left: 0;
     width: 18px;
-    height: 13px;
+    height: 18px;
     background: url(../image/sprite.emsk.png);
-    background-position: -25px -30px;
+    background-position: -25px -25px;
     transform: translateY(-50%);
 
 }
@@ -230,6 +237,14 @@ a.sk::before {
     line-height: 24px;
 }
 
+i {
+    text-decoration: none;
+}
+
+sup {
+    font-size: 12rem;
+}
+
 .banner b {
     color: #fd8300;
     font-weight: bold;
@@ -251,7 +266,6 @@ main {
     text-transform: uppercase;
 }
 
-
 .info {
     margin: 15px 0;
 }
@@ -262,7 +276,7 @@ article {
 
 article a {
     display: block;
-    margin: 20px 0;
+    margin: 15`px 0;
     text-decoration: underline;
 }
 
@@ -297,9 +311,8 @@ a:hover {
 
 
 aside {
-    display: inline-block;
+    display: block;
     overflow: hidden;
-    justify-content: space-between;
     border-radius: 3px;
     width: 23%;
     min-width: 220px;
@@ -307,7 +320,6 @@ aside {
 
 aside li {
     position: relative;
-    border-bottom: 1px solid #cecedd;
 }
 
 
@@ -352,49 +364,42 @@ aside b {
     line-height: 24px;
 }
 
-aside li {
-    padding: 15px;
-    background-color: #e4e4ec;
-}
-
 
 aside a {
+    display: block;
+    font-size: 14rem;
+    line-height: 24rem;
     color: #25252c;
+    padding: 15px;
+    background-color: #e4e4ec;
+    border-bottom: 1px solid #cdcddd;
 }
-
-aside a:hover {
-    color: #fff;
-}
-
-.supmenu {
-    display: none;
-}
-
-
-aside li:hover {
-    background-color: #fd8300;
-    color: #fff;
-}
-
-aside li:hover a {
-    color: #fff;
-}
-
 
 ul li:last-child {
     border: none;
 }
 
-li:hover .supmenu {
-    display: block;
+
+.supmenu {
+    display: none;
+}
+
+.supmenu a {
+    color: #666;
+    padding-left: 30px;
+}
+
+aside li:hover>a {
+    color: #fff;
+    background-color: #fd8300;
 }
 
 .supmenu li:hover {
     background-color: #cecedd;
 }
 
-.supmenu a {
-    color: #666;
+li:hover .supmenu {
+    display: block;
 }
 
 h2 {
@@ -407,7 +412,16 @@ h2 {
 }
 
 figure {
+    position: relative;
     width: 30%;
+}
+
+figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 figure img {
@@ -418,12 +432,9 @@ figcaption p:nth-child(odd) {
     margin: 5px 0;
 }
 
-
-figure a:hover {
-    color: #1f1f56;
+figure:hover h3 {
     text-decoration: underline;
 }
-
 
 figure p {
     color: #9999a6;
@@ -454,7 +465,6 @@ footer a:hover {
     font-size: 18rem;
     font-weight: bold;
     color: #25252c;
-    text-decoration: none;
 }
 
 

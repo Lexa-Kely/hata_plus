@@ -1,0 +1,49 @@
+.description {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #666666;
+    font-family: "Arial";
+    margin-bottom: 25px;
+}
+
+table {
+    border-radius: 3px;
+    font-size: 18px;
+    width: 100%;
+}
+
+thead tr {
+    background-color: #1f1f56;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 12px 15px;
+}
+
+tbody td {
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
+}
+
+tbody tr:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.time {
+    margin-top: 25px;
+}
+
+.v {
+    padding-top: 25px;
+    font-size: 14rem;
+    line-height: 24rem;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}

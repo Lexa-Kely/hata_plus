@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Компанія с продажу та будівництвом будинків на замовлення</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/table.css">
 </head>
 
 <body>
@@ -18,7 +16,7 @@
                 <ul class="mainmenu flex">
                     <li><a href="#">Головна</a></li>
                     <li><a href="#">Про компанію</a></li>
-                    <li><a href="tab">Наші будівлі</a></li>
+                    <li><a href="table.html">Наші будівлі</a></li>
                     <li><a href="#">Акції</a></li>
                     <li><a href="#">Контакти</a></li>
                 </ul>
@@ -42,39 +40,73 @@
             </ul>
             <div><a class="button" href="#">Замовити дзвінок</a></div>
         </div>
-        <div class="banner">
-            <p class="sale">Пропозиція місяця</p>
-            <p class="info">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-            <p class="price"><b>5999</b> <i>грн/м</i><sup>2</sup></p>
-        </div>
     </header>
     <main>
-
-        <div class="wrapper flex">
-            <div>
-                <article class="description">
-                    <h1>Компанія “Хата Плюс”</h1>
-                    <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
-                        гармонії з
-                        природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала
-                        справжньою
-                        віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.
-                    </p>
-                    <p>
-
-                        Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова пропозиція
-                        по
-                        співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна
-                        ділянка,
-                        на
-                        якому
-                        можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити
-                        альтанку і
-                        барбекю.
-                    </p>
-                    <a href="#">Детальніше про нас</a>
-                </article>
-                <h2>Популярні проекти</h2>
+        <div class="wrapper">
+            <h2>Ціни на послуги тимчасового проживання</h2>
+            <p class="description">Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником,
+                Wi-Fi-зоною.
+                Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії
+                обраного номера.</p>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Назва котеджу</th>
+                        <th>Загальна площа м.кв.</th>
+                        <th>Кількість кімнат</th>
+                        <th>Гараж</th>
+                        <th>Ціна</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hamilton Paradise</td>
+                        <td>392</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>45 000 $</td>
+                    </tr>
+                    <tr>
+                        <td>Montreal House House</td>
+                        <td>245</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>29 750 $</td>
+                    </tr>
+                    <tr>
+                        <td>Edmonton</td>
+                        <td>338</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>53 200 $</td>
+                    </tr>
+                    <tr>
+                        <td>Calgary Skyliner</td>
+                        <td>219</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>31 000 $</td>
+                    </tr>
+                    <tr>
+                        <td>Quebec Enterprices</td>
+                        <td>392</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>110 000 $</td>
+                    </tr>
+                    <tr>
+                        <td>Alberta</td>
+                        <td>436</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>67 500 $</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Час заселення з 14-00, виїзд до 12-00</p>
+            <p>Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
+            <a href="#" class="v">Ознайомитись з правилами проживання</a>
+            <h2>Популярні проекти</h2>
                 <section class="houses flex wrap">
                     <figure>
                         <a href="#"></a>
@@ -111,27 +143,20 @@
                             </figcaption>
                         
                     </figure>
+
+                    <figure>
+                        <a href="#"></a>
+                        <img src="image/richmond.png" alt="rhhjyrr">
+                        <figcaption>
+                            <h3>RICHMOND (324 м<sup>2</sup>)</h3>
+                            <p>Загальна площа будови: 242 м2</p>
+                            <p> Кількість спалень: 3</p>
+                            <p>Гараж: 3 авто</p>
+                        </figcaption>
+                    </figure>
                 </section>
             </div>
             <aside>
-                <b>Категорії проектів</b>
-                <ul class="navigation">
-                    <li><a href="#">Генеральний план</a></li>
-                    <li>
-                        <a class="burger" href="#">Навколишнє середовище</a></li>
-                        <ul class="supmenu">
-                            <li><a href="#">Продані</a></li>
-                            <li><a href="#">Заброньованні</a></li>
-                            <li><a href="#">В процесі будівництва</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Умови придбання</a></li>
-                    <li><a href="#">Загородні котеджі</a></li>
-                    <li><a href="#">Інфраструктура</a> </li>
-                    <li><a href="#">Готові будинки</a></li>
-                </ul>
-            </aside>
-
         </div>
     </main>
     <footer>
