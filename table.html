@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Хата Плюс. Список Проектів Компанії. Характеристики Будинків </title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/table.css">
 </head>
@@ -16,7 +16,21 @@
                 <ul class="mainmenu flex">
                     <li><a href="#">Головна</a></li>
                     <li><a href="#">Про компанію</a></li>
-                    <li><a href="table.html">Наші будівлі</a></li>
+                    <li><a href="table.html">Наші будівлі</a>
+                        <ul class="submenu">
+                            <li><a href="#">Таунхауси</a></li>
+                            <li><a href="#">Пентхауси</a></li>
+                            <li><a href="#">Котеджі</a></li>
+                            <li class="hover"><a href="#">Собачі будки</a>
+                            <ul class="sub">
+                                <li><a href="#">Елітні будки</a></li>
+                                <li><a href="#">Для чіхуахуа</a></li>
+                                <li><a href="#">Вольєри</a></li>
+                                <li><a href="#">Халабуди</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">Акції</a></li>
                     <li><a href="#">Контакти</a></li>
                 </ul>
@@ -43,19 +57,24 @@
     </header>
     <main>
         <div class="wrapper">
+            <div class="yappe">
             <h2>Ціни на послуги тимчасового проживання</h2>
             <p class="description">Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником,
                 Wi-Fi-зоною.
                 Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії
                 обраного номера.</p>
-            <table class="styled-table">
+            <table>
                 <thead>
                     <tr>
-                        <th>Назва котеджу</th>
+                        <th rowspan="2">Назва котеджу</th>
+                        <th class="center" colspan="3">Характеристики будинків</th>
+                        <th class="end" rowspan="2">Ціна</th>
+                    </tr>
+                    
+                    <tr class="infor">
                         <th>Загальна площа м.кв.</th>
                         <th>Кількість кімнат</th>
                         <th>Гараж</th>
-                        <th>Ціна</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -103,9 +122,12 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="time">
             <p>Час заселення з 14-00, виїзд до 12-00</p>
             <p>Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
-            <a href="#" class="v">Ознайомитись з правилами проживання</a>
+        </div>
+            <a href="#" class="viem">Ознайомитись з правилами проживання</a>
+        </div>
             <h2>Популярні проекти</h2>
                 <section class="houses flex wrap">
                     <figure>
@@ -146,7 +168,7 @@
 
                     <figure>
                         <a href="#"></a>
-                        <img src="image/richmond.png" alt="rhhjyrr">
+                        <img class="last" src="image/richmond.png" alt="rhhjyrr">
                         <figcaption>
                             <h3>RICHMOND (324 м<sup>2</sup>)</h3>
                             <p>Загальна площа будови: 242 м2</p>

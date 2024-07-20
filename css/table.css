@@ -1,3 +1,91 @@
+li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 126px;
+    z-index: 1;
+}
+
+.submenu li {
+    background-color: #e4e4ec;
+    border-bottom: #cecedd solid 1px;
+}
+
+.submenu li:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px;
+    font-size: 12rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.submenu::before {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    bottom: 100%;
+    background-position: 0 0;
+}
+
+.submenu li:hover::before {
+    background-position: 0 -8px;
+}
+
+.sub {
+    display: none;
+}
+
+.submenu li:hover {
+    background-color: #fd8300;
+}
+.submenu li:hover a {
+    color: #fff;
+}
+
+.submenu li::before {
+    content: "";
+    position: absolute;
+    background: url(../image/strelochka.png) no-repeat;
+    width: 8px;
+    height: 12px;
+    background-position: 0 0px;
+    top: 12px;
+    left: 87%;
+    transition: 0.3s;
+}
+
+li:hover .submenu {
+  display: block;;
+}
+
+
+.hover:hover .sub {
+    display: block;
+}
+
+.sub::before {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    bottom: 100%;
+}
+
 .description {
     font-size: 14rem;
     line-height: 24rem;
@@ -10,6 +98,7 @@ table {
     border-radius: 3px;
     font-size: 18px;
     width: 100%;
+    border-collapse: collapse;
 }
 
 thead tr {
@@ -17,6 +106,16 @@ thead tr {
     color: #ffffff;
     text-align: left;
     font-weight: bold;
+    border-bottom: 1px solid #274569;
+}
+.center {
+    text-align: center;
+    border-left: 1px solid #274569;
+    border-right: 1px solid #274569;
+}
+
+.end {
+    text-align: right;
 }
 
 th,
@@ -24,26 +123,45 @@ td {
     padding: 12px 15px;
 }
 
+.infor th {
+    text-align: center;
+    border-left: 1px solid #274569;
+    border-right: 1px solid #274569;
+}
+
 tbody td {
     box-shadow: inset 0px -1px 0px #cecedd;
     background-color: #e4e4ec;
+    transition: 0.1s;
+    border-right: 1px solid #cecedd;
 }
 
-tbody tr:hover {
+tbody tr:hover td {
     color: #fff;
     background-color: #fd8300;
 }
 
 .time {
-    margin-top: 25px;
+    padding: 25px 0;
 }
 
-.v {
-    padding-top: 25px;
+.viem {
     font-size: 14rem;
     line-height: 24rem;
     text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
+}
+
+.yappe {
+
+}
+
+h2 {
+    border-top:#e4e4ec solid 1px;
+}
+
+.last {
+    height: 195px;
 }
