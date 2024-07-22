@@ -52,6 +52,9 @@ h3 {
     line-height: 24rem;
 }
 
+header {
+    box-shadow: (0, 0, 0, 5px);
+}
 
 .wrapper {
     margin: auto;
@@ -137,13 +140,14 @@ header a {
 .header_content {
     position: relative;
     padding: 40px 0;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
 }
 
 .header_content:before {
     content: "";
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 48%;
     width: 2px;
     height: 52px;
     background-color: #e4e4ec;
@@ -239,6 +243,7 @@ a.sk::before {
     padding: 60px 0 40px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/banner.webp);
+    background-size: 100%;
 }
 
 
@@ -248,8 +253,12 @@ a.sk::before {
     line-height: 24px;
 }
 
-i {
-    text-decoration: none;
+span {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 sup {

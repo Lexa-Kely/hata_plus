@@ -66,7 +66,7 @@ li {
     background-position: 0 0px;
     top: 12px;
     left: 87%;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 li:hover .submenu {
@@ -111,7 +111,6 @@ li:hover .submenu {
 }
 
 table {
-    border-radius: 3px;
     font-size: 18px;
     width: 100%;
     border-collapse: collapse;
@@ -152,6 +151,22 @@ tbody td {
     border-right: 1px solid #cecedd;
 }
 
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:nth-child(3) {
+    text-align: center;
+}
+
+td:nth-child(4) {
+    text-align: center;
+}
+
+td:nth-child(5) {
+    text-align: end;
+}
+
 tbody tr:hover td {
     color: #fff;
     background-color: #fd8300;
@@ -168,14 +183,6 @@ tbody tr:hover td {
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
-}
-
-.yappe {
-
-}
-
-h2 {
-    border-top:#e4e4ec solid 1px;
 }
 
 .last {

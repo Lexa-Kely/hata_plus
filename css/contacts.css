@@ -1,0 +1,43 @@
+header {
+    margin-bottom: 85px;
+}
+
+.around {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    display: block;
+}
+
+
+h3 {
+    margin-bottom: 20px;
+}
+
+
+.form {
+    width: 466px;
+    padding: 35px 0;
+}
+
+.tema {
+    width: 467px;
+}
+
+.submit {
+    border-radius: 21px;
+    background-color: #fd8300;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.r {
+    height: 300px;
+    width: 466px;
+    background-color: black;
+}
