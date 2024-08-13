@@ -11,33 +11,105 @@ a {
     display: block;
 }
 
+form p {
+    position: relative;
+}
 
-h3 {
-    margin-bottom: 20px;
+.contact {
+    border-bottom: 1px solid #e4e4ec;
 }
 
 
-.form {
-    width: 466px;
-    padding: 35px 0;
+form {
+    width: 480px;
 }
 
-.tema {
+.forms {
+    margin-top: 40px;
+}
+
+
+input[type=text],
+input[type=tel] {
+    width: 47%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+    padding: 5px 5px;
+    margin: 5px;
+    font-size: 13rem;
+    line-height: 21rem;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+}
+
+iframe {
+    height: 300px;
+}
+
+input.tema {
     width: 467px;
-}
-
-.submit {
-    border-radius: 21px;
-    background-color: #fd8300;
 }
 
 textarea {
     resize: vertical;
+    width: 467px;
+    margin: 5px;
+    min-height: 100px;
+    max-height: 250px;
 }
 
 
-.r {
-    height: 300px;
-    width: 466px;
-    background-color: black;
+input::placeholder {
+    padding: 15px;
+}
+
+
+
+input[type=checkbox] {
+    appearance: none;
+    width: 18px;
+    padding: 9px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+
+
+input[type=checkbox]:checked::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    top: 28%;
+    left: 22%;
+    rotate: -45deg;
+    border: 2px solid #1f1f56;
+    border-right: none;
+    border-top: none;
+}
+
+
+input[type=submit] {
+    display: inline-block;
+    width: 130px;
+    padding: 10px 30px;
+    border-radius: 21px;
+    background-color: #fd8300;
+    color: #fff;
+    width: 30%;
+}
+
+textarea {
+    padding: 15px;
+}
+
+form p {
+    display: inline;
+}
+
+.maillist {
+    padding: 0 10px 0 30px;
 }

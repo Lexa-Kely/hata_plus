@@ -7,7 +7,7 @@
     <title>Список Службових Контактів Будівельної Компанії Хата Плюс</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/table.css">
-    <link rel="stylesheet" href="/css/contacts.css">
+    <link rel="stylesheet" href="css/contacts.css">
 </head>
 
 <body>
@@ -58,7 +58,7 @@
     </header>
     <main>
         <h2 class="wrapper">Контакти</h2>
-        <div class="wrapper flex">
+        <div class="wrapper flex contact">
             <div class="block">
                 <h3>Наш офіс</h3>
                 <a href="#">с. Війтівці, Хмельницька обл. 27500</a>
@@ -81,19 +81,32 @@
                     Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
             </div>
         </div>
-        <div class="wrapper around">
-            <div class="r"></div>
-            <div class="form">
+        <div class="wrapper around forms">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xwrcuyQ2eMq7xjOd1HrY_3QD-9WCAjE&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
                 <form method="get">
                     <h3>Форма зворотнього зв’язку</h3>
-                    <input type="text" class="t">
-                    <input type="text" class="t">
-                    <input type="text" class="tema">
-                    <textarea name="Text" id=""></textarea>
-                    <input type="submit" class="submit">
-                    <input type="checkbox"> <p>Я бажаю отримувати останні новини</p>
+                    <p><input name="" type="text" maxlength="40" placeholder="Ваше ім’я" required>
+                    <label for=""></label>
+                    </p>
+                    <p><input name="" type="tel" maxlength="15" placeholder="Телефон" required>
+                    <label for=""></label>
+                    </p>
+                    <p><input name="" type="text" maxlength="50" placeholder="Тема повідомлення" required class="tema">
+                    <label for=""></label>
+                    </p>
+                    <p><textarea name="" id="description" placeholder="Текст" required></textarea>
+                    <label for=""></label>
+                    </p>
+                    <p><input name="" type="submit" value="Відправити">
+                    <label for=""></label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="" id="">
+                        <label>Я бажаю отримувати останні новини</label>
+                    </p>
                 </form>
-            </div>
         </div>
     </main>
 </body>
