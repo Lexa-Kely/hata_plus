@@ -15,12 +15,24 @@ a {
     display: block;
 }
 
-form p {
-    position: relative;
-}
 
 .contact {
     border-bottom: 1px solid #e4e4ec;
+}
+
+.number {
+    font-size: 18rem;
+    line-height: 24rem;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.styledElement {
+    font-size: 14rem;
+    line-height: 21rem;
+    color: #666666;
+    font-family: "Arial";
 }
 
 .header_content .tel a {
@@ -32,12 +44,12 @@ form p {
 }
 
 iframe {
-    margin-top: -59px;
+    height: 300px;
+    margin-top: -47px;
     border: none;
 }
 
 .map {
-
     position: relative;
     overflow: hidden;
 }
@@ -67,10 +79,6 @@ input[type=tel] {
     font-family: "Arial";
 }
 
-iframe {
-    height: 300px;
-}
-
 input.tema {
     width: 467px;
 }
@@ -89,11 +97,10 @@ input::placeholder {
 }
 
 
-
 input[type=checkbox] {
     appearance: none;
-    width: 18px;
-    padding: 9px;
+    width: 1px;
+    padding: 6px;
     position: relative;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -104,25 +111,24 @@ input[type=checkbox] {
 input[type=checkbox]:checked::before {
     content: "";
     position: absolute;
-    width: 7px;
-    height: 4px;
-    top: 28%;
-    left: 22%;
+    width: 6px;
+    height: 3px;
+    top: 20%;
+    left: 11%;
     rotate: -45deg;
     border: 2px solid #1f1f56;
     border-right: none;
     border-top: none;
 }
 
-
 input[type=submit] {
     display: inline-block;
-    width: 130px;
-    padding: 10px 30px;
+    width: 120px;
+    padding: 10px 20px;
     border-radius: 21px;
     background-color: #fd8300;
     color: #fff;
-    width: 30%;
+    border: none;
 }
 
 textarea {
@@ -131,6 +137,14 @@ textarea {
 
 form p {
     display: inline;
+}
+
+#news {
+    margin: -2px 0;
+}
+
+.news {
+    padding: 20px;
 }
 
 .maillist {
