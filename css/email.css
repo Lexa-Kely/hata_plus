@@ -9,7 +9,6 @@ table td {
 }
 
 img {
-    display: block;
     border: 0;
     height: auto;
 }
@@ -81,7 +80,7 @@ ul {
 }
 
 .main-content {
-    background-image: url(/image/yzor.jpg);
+    background-image: url(https://github.com/Lexa-Kely/hata_plus/blob/master/image/yzor.jpg?raw=true);
     text-align: center;
     background-color: #f2f2f2;
 }
@@ -126,10 +125,17 @@ ul {
 
 .cta-footer-button {
     display: inline-block;
-    color: white;
-    padding: 15px 25px;
+    margin: 15px 0;
+    padding: 10px 25px;
     border-radius: 20px;
     background-color: #1f1f56;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+    text-decoration: none;
 }
 
 .section {
@@ -160,7 +166,7 @@ p.houses {
 }
 
 .footer {
-    background-color: #333333;
+    background-color: #08081a;
     color: white;
     text-align: center;
     padding: 20px;
@@ -172,6 +178,14 @@ p.houses {
     margin: 0 10px;
 }
 
+.footer p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    text-align: center;
+}
+
 .superfooter {
     padding: 15px 0;
     background-color: #000014;
@@ -180,7 +194,15 @@ p.houses {
 
 .superfooter a {
     font-size: 11px;
+    text-decoration: none;
     line-height: 18px;
     color: #fd8300;
     font-family: "Arial";
+}
+.superfooter i {
+    font-size: 11px;
+    line-height: 18px;
+    color: #fd8300;
+    font-family: "Arial";
+    text-align: center;
 }
