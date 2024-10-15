@@ -66,6 +66,7 @@ header {
 .flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 26px;
 }
 
@@ -276,7 +277,9 @@ sup {
 main {
     margin: 35px 0;
 }
-
+.main-info {
+    width: 74%;
+}
 .sale {
     color: #ffffff;
     font-weight: 700;
@@ -517,4 +520,51 @@ a.em::before:hover {
 
 .list a:hover {
     color: #fd8300;
+}
+
+@media screen and (max-width: 1024px) {
+    .header_content:before {
+        display: none;
+    }
+    .button-block {
+        display: flex;
+        width: 512px;
+        flex-direction: row-reverse
+    }
+    .main-info {
+        width: 69%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button-block {
+        display: block;
+        width: 234px;
+    }
+
+    .header_content:before {
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav {
+        display: none;
+    }
+
+    .flex {
+        justify-content: center;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .header_content:before {
+        display: none;
+    }
+
+.social {
+    padding: 10px 0;
+}
 }
