@@ -44,12 +44,16 @@ a {
 }
 
 iframe {
+    min-width: 500px;
     height: 300px;
     margin-top: -47px;
     border: none;
 }
-
+.wrap {
+    flex-wrap: wrap;
+}
 .map {
+    min-width: 500px;
     position: relative;
     overflow: hidden;
 }
@@ -60,7 +64,8 @@ form {
 }
 
 .forms {
-    margin-top: 40px;
+    padding: 20px 0;
+    overflow: scroll;
 }
 
 
@@ -149,4 +154,12 @@ form p {
 
 .maillist {
     padding: 0 10px 0 30px;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .flex {
+        gap: 20px;
+    }
 }
