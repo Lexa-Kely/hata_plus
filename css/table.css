@@ -216,8 +216,11 @@ tbody tr:hover td {
     .wrapper {
         width: 80%;
     }
-    nav {
+    nav{
         display: block;
+    }
+    .mainmenu {
+        display: flex;
     }
 
     figure {

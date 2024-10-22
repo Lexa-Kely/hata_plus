@@ -68,9 +68,6 @@ header {
     gap: 13px;
 }
 
-nav {
-    background-color: #1f1f56;
-}
 
 
 .social {
@@ -480,9 +477,7 @@ a.em::before:hover {
     color: #fd8300;
 }
 
-nav {
-    display: none;
-}
+
 
 .burger {
     position: relative;
@@ -520,15 +515,19 @@ nav {
 .burger span::after {
     top: 15px;
 }
-
-.active-burger+.mainmenu {
+.mainmenu {
+    display: none;
+}
+.active-burger~nav {
     display: flex;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 100vh;
-    width: 80vh;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background-color: #4d4dc1;
+    color: black;
     flex-direction: column;
     justify-content: center;
 }
@@ -546,6 +545,10 @@ figure {
 }
 
 @media screen and (min-width: 768px) {
+    nav {
+        background-color: #1f1f56;
+    }
+    
     a.fb {
         height: 19px;
         width: 15px;
@@ -592,10 +595,6 @@ figure {
         background-color: #e4e4ec;
     }
 
-    nav {
-        display: block;
-    }
-
     .burger {
         display: none;
     }
@@ -607,7 +606,9 @@ figure {
     span::after {
         display: none;
     }
-
+    .mainmenu {
+        display: block;
+    }
     .button-block {
         display: block;
         width: 234px;
@@ -652,7 +653,7 @@ figure {
 
     .button-block {
         display: flex;
-        width: 512px;
+        width: 623px;
         flex-direction: row-reverse
     }
 
