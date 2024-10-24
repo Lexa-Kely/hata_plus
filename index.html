@@ -9,17 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <script src="js/scripts.js"></script>
+    
 </head>
 
 <body>
     <header>
-        <div class="burger #burger">
+        <div class="burger" id="burger">
             <span></span>
-            
         </div>
-        <div class="close"></div>
-        <nav>
+        <nav class="menu">
             <div class="wrapper flex wrap menu_header">
                 <ul class="mainmenu flex">
                     <li><a href="#">Головна</a></li>
@@ -35,7 +33,11 @@
                 </ul>
             </div>
         </nav>
-            
+        <div class="close" id="closeButton">
+            <span></span>
+        </div>
+    
+
         <div class="wrapper header_content flex wrap">
             <a class="logo" href="index.html"><img src="image/logo.png" alt="лого хата+"></a>
             <div class="tel">
@@ -167,5 +169,12 @@
         <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
     </footer>
 </body>
-
+<script src="js/scripts.js">
+    burger.onclick = function () {
+        burger.classList.toggle('active_burger')
+    }
+    closeButton.onclick = function () {
+        burger.classList.remove('active_burger')
+    }
+</script>
 </html>

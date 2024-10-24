@@ -207,7 +207,7 @@ tbody tr:hover td {
         display: none;
     }
 
-    .yappe {
+    .table-price {
         overflow-x: scroll;
     }
 }

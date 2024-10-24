@@ -11,6 +11,9 @@
 
 <body>
     <header>
+        <div class="burger" id="burger">
+            <span></span>
+        </div>
         <nav>
             <div class="wrapper flex">
                 <ul class="mainmenu flex">
@@ -41,6 +44,9 @@
                 </ul>
             </div>
         </nav>
+        <div class="close" id="closeButton">
+            <span></span>
+        </div>
         <div class="wrapper header_content flex">
             <a class="logo" href="index.html"><img src="image/logo.png" alt="лого хата+"></a>
             <div class="tel">
@@ -63,65 +69,68 @@
                 Wi-Fi-зоною.
                 Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії
                 обраного номера.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th rowspan="2">Назва котеджу</th>
-                        <th class="center" colspan="3">Характеристики будинків</th>
-                        <th class="end" rowspan="2">Ціна</th>
-                    </tr>
-                    
-                    <tr class="infor">
-                        <th>Загальна площа м.кв.</th>
-                        <th>Кількість кімнат</th>
-                        <th>Гараж</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hamilton Paradise</td>
-                        <td>392</td>
-                        <td>5</td>
-                        <td>2</td>
-                        <td>45 000 $</td>
-                    </tr>
-                    <tr>
-                        <td>Montreal House House</td>
-                        <td>245</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>29 750 $</td>
-                    </tr>
-                    <tr>
-                        <td>Edmonton</td>
-                        <td>338</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>53 200 $</td>
-                    </tr>
-                    <tr>
-                        <td>Calgary Skyliner</td>
-                        <td>219</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>31 000 $</td>
-                    </tr>
-                    <tr>
-                        <td>Quebec Enterprices</td>
-                        <td>392</td>
-                        <td>4</td>
-                        <td>2</td>
-                        <td>110 000 $</td>
-                    </tr>
-                    <tr>
-                        <td>Alberta</td>
-                        <td>436</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>67 500 $</td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <div class="table-price">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Назва котеджу</th>
+                            <th class="center" colspan="3">Характеристики будинків</th>
+                            <th class="end" rowspan="2">Ціна</th>
+                        </tr>
+                
+                        <tr class="infor">
+                            <th>Загальна площа м.кв.</th>
+                            <th>Кількість кімнат</th>
+                            <th>Гараж</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hamilton Paradise</td>
+                            <td>392</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>45 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Montreal House House</td>
+                            <td>245</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>29 750 $</td>
+                        </tr>
+                        <tr>
+                            <td>Edmonton</td>
+                            <td>338</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>53 200 $</td>
+                        </tr>
+                        <tr>
+                            <td>Calgary Skyliner</td>
+                            <td>219</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>31 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Quebec Enterprices</td>
+                            <td>392</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>110 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Alberta</td>
+                            <td>436</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>67 500 $</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="time">
             <p>Час заселення з 14-00, виїзд до 12-00</p>
             <p>Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
@@ -207,5 +216,12 @@
         <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
     </footer>
 </body>
-
+<script src="js/scripts.js">
+    burger.onclick = function () {
+        burger.classList.toggle('active_burger')
+    }
+    closeButton.onclick = function () {
+        burger.classList.remove('active_burger')
+    }
+</script>
 </html>
