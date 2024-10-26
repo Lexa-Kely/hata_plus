@@ -18,6 +18,9 @@ a {
     color: #b1b1d2;
     text-decoration: none;
 }
+input {
+    appearance: none;
+}
 .list a {
     font-size: 14px;
     font-family: "Arial";
@@ -54,8 +57,9 @@ h3 {
 }
 
 header {
-    box-shadow: (0, 0, 0, 5px);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .wrapper {
     margin: auto;
@@ -65,7 +69,6 @@ header {
 .flex {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
     gap: 13px;
 }
@@ -73,7 +76,6 @@ header {
 .header_content {
     position: relative;
     padding: 40px 0;
-    box-shadow: (0 0 5px rgba(0, 0, 0, 0.1));
 }
 
 .social {
@@ -127,6 +129,10 @@ header a {
     line-height: 24px;
 }
 
+.mainmenu {
+    padding: 0px 10px;
+}
+
 .mainmenu a {
     display: block;
     padding: 19px 10px;
@@ -135,12 +141,6 @@ header a {
     line-height: 24rem;
     font-weight: normal;
 }
-
-.mainmenu:first-child a {
-    padding-left: 0;
-}
-
-
 
 .header_content a {
     color: #25252c;
@@ -224,7 +224,7 @@ a.sk::before {
 }
 
 .button:hover {
-    color: #1f1f56;
+    color: #fff;
     background-color: #fd8300;
 }
 
@@ -270,6 +270,7 @@ main {
 
 .main-info {
     width: 74%;
+    padding: 0 15px;
 }
 
 .sale {
@@ -324,6 +325,10 @@ a:hover {
     color: #fd8300;
 }
 
+.menushka {
+    top: 10px;
+    position: sticky;
+}
 
 aside {
     display: block;
@@ -331,6 +336,8 @@ aside {
     border-radius: 3px;
     width: 23%;
     min-width: 220px;
+    top: 10px;
+    position: sticky;
 }
 
 aside li {
@@ -342,7 +349,7 @@ aside li::after {
     content: "";
     position: absolute;
     background: url(../image/strelochka.png)no-repeat;
-    width: 8px;
+    width: 60px;
     height: 12px;
     background-position: 0 0px;
     top: 21px;
@@ -678,7 +685,6 @@ figure {
     .flex {
         display: flex;
         justify-content: center;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 13px;
     }
@@ -689,10 +695,6 @@ figure {
 
     figure {
         width: 100%;
-    }
-
-    .first {
-        padding: 0 25px;
     }
 
     .list {
@@ -715,7 +717,7 @@ figure {
     }
 
     .flex {
-        gap: 20px;
+        gap: 33px;
     }
 
     .messangers {
@@ -732,6 +734,14 @@ figure {
 }
 
 @media screen and (min-width: 1440px) {
+    .tel a,
+    .messangers li {
+        padding: 3px 0;
+    }
+    .header_content:before {
+        display: block;
+    }
+
     nav {
         display: block;
     }

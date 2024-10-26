@@ -2,6 +2,12 @@ li {
     position: relative;
 }
 
+.around {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .submenu {
     display: none;
     position: absolute;
@@ -13,7 +19,7 @@ li {
 }
 
 .submenu li {
-    background-color: #e4e4ec;
+    background-color: #6c6cbe;
     border-bottom: #cecedd solid 1px;
 }
 
@@ -24,11 +30,11 @@ li {
 .submenu a,
 .sup a {
     display: block;
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 12rem;
     letter-spacing: 2rem;
     line-height: 24rem;
-    color: #25252c;
+    color: white;
     font-family: "Arial";
 }
 
@@ -43,7 +49,7 @@ li {
 }
 
 .submenu li:hover::before {
-    background-position: -1px -10px;
+    background-position: 1px -10px;
 }
 
 .sub {
@@ -62,7 +68,7 @@ li {
     content: "";
     position: absolute;
     background: url(../image/strelochka.png) no-repeat;
-    width: 8px;
+    width: 60px;
     height: 12px;
     background-position: 0 0px;
     top: 12px;
@@ -84,7 +90,6 @@ li:hover .submenu {
     width: 100%;
     top: 0;
     left: calc(100% + 5px);
-    ;
     width: 126px;
     z-index: 1;
     color: #25252c;
@@ -192,33 +197,33 @@ tbody tr:hover td {
 }
 
 
-@media screen and (min-width: 320px) {
-    .wrapper{
-        width: 95%;
-    }
-    .header_content::before{
-        display: none;
-    }
-    figure {
-        width: 100%;
-    }
 
-    nav {
-        display: none;
-    }
-
-    .table-price {
-        overflow-x: scroll;
-    }
+.wrapper {
+    width: 95%;
 }
 
+.header_content::before {
+    display: none;
+}
+
+figure {
+    width: 100%;
+}
+
+nav {
+    display: none;
+}
+
+.table-price {
+    overflow-x: scroll;
+}
+
+
 @media screen and (min-width: 768px) {
-    .wrapper {
-        width: 80%;
-    }
-    nav{
+    nav {
         display: block;
     }
+
     .mainmenu {
         display: flex;
     }
@@ -226,6 +231,15 @@ tbody tr:hover td {
     figure {
         width: 48%;
     }
+
+    .submenu a,
+    .sup a {
+        color: #25252c;
+    }
+    .submenu li {
+        background-color: #e4e4ec;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
