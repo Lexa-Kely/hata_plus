@@ -1,5 +1,7 @@
 li {
     position: relative;
+    font-size: 16rem;
+    line-height: 24rem;
 }
 
 .around {
@@ -178,10 +180,6 @@ td:nth-child(5) {
     text-align: end;
 }
 
-tbody tr:hover td {
-    color: #fff;
-    background-color: #fd8300;
-}
 
 .time {
     padding: 25px 0;
@@ -236,10 +234,11 @@ nav {
     .sup a {
         color: #25252c;
     }
+
     .submenu li {
         background-color: #e4e4ec;
     }
-    
+
 }
 
 @media screen and (min-width: 1024px) {
