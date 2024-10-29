@@ -14,13 +14,16 @@ body {
     font-size: 14rem;
     line-height: 24rem;
 }
+
 a {
     color: #b1b1d2;
     text-decoration: none;
 }
+
 input {
     appearance: none;
 }
+
 .list a {
     font-size: 14px;
     font-family: "Arial";
@@ -71,6 +74,10 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     gap: 13px;
+}
+
+.menu_header {
+    flex-direction: column;
 }
 
 .header_content {
@@ -234,7 +241,7 @@ a.sk::before {
     padding: 60px 0 40px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/banner.webp);
-    background-size: 100%;
+    background-size: cover;
 }
 
 
@@ -253,7 +260,7 @@ span {
 }
 
 sup {
-    font-size: 12rem;
+    font-size: 9rem;
 }
 
 .banner b {
@@ -269,7 +276,6 @@ main {
 }
 
 .main-info {
-    width: 74%;
     padding: 0 15px;
 }
 
@@ -327,7 +333,6 @@ a:hover {
 
 .menushka {
     top: 10px;
-    position: sticky;
 }
 
 aside {
@@ -436,7 +441,7 @@ h2 {
 
 figure {
     position: relative;
-    width: 30%;
+    width: 50%;
 }
 
 figure a {
@@ -533,6 +538,7 @@ a.em::before:hover {
     width: 100%;
     height: 60px;
 }
+
 .close {
     position: relative;
     width: 100%;
@@ -594,7 +600,7 @@ nav {
     z-index: 10;
 }
 
-.close span{
+.close span {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -605,6 +611,7 @@ nav {
     width: 40px;
     transition: 0.3s;
 }
+
 .close span::before {
     content: "";
     position: absolute;
@@ -616,7 +623,7 @@ nav {
     border-radius: 4px;
 }
 
-.close span::before{
+.close span::before {
     rotate: 90deg;
 }
 
@@ -624,9 +631,6 @@ nav {
     display: block;
 }
 
-figure {
-    width: 100%;
-}
 
 .header_content:before {
     display: none;
@@ -638,11 +642,18 @@ figure {
 
 
 @media screen and (min-width: 768px) {
+    .wrapper {
+        width: 98%;
+    }
+
     nav {
         display: block;
         background-color: #1f1f56;
     }
 
+    .menu_header {
+        flex-direction: row;
+    }
 
     .header_content:before {
         content: "";
@@ -670,6 +681,14 @@ figure {
         display: flex;
     }
 
+    .mainmenu a {
+        padding: 19px 19px;
+    }
+
+    .mainmenu {
+        padding: 0;
+    }
+
     .button-block {
         display: block;
         width: 234px;
@@ -682,6 +701,7 @@ figure {
     .logo {
         padding: 0 20px;
     }
+
     .flex {
         display: flex;
         justify-content: center;
@@ -691,10 +711,12 @@ figure {
 
     .main-info {
         width: 62%;
+        padding: 0;
     }
 
     figure {
-        width: 100%;
+        width: 31%;
+
     }
 
     .list {
@@ -707,9 +729,14 @@ figure {
 }
 
 @media screen and (min-width: 1024px) {
+    .wrapper {
+        max-width: 1024px;
+    }
+
     nav {
         display: block;
     }
+
 
     .button-block {
         display: flex;
@@ -717,8 +744,19 @@ figure {
     }
 
     .flex {
-        gap: 33px;
+        gap: 24px;
+        justify-content: space-between;
     }
+
+    .header_content {
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .main-info {
+        padding: 0 0;
+    }
+
 
     .messangers {
         padding: 0 0;
@@ -728,16 +766,33 @@ figure {
         width: 69%;
     }
 
+    .mainmenu {
+        padding: 0px 0px;
+    }
+
+    .mainmenu a {
+        padding: 19px 0;
+    }
+
     figure {
         width: 30%;
     }
 }
 
 @media screen and (min-width: 1440px) {
+    .wrapper {
+        max-width: 1280px;
+    }
+
+    .mainmenu {
+        padding: 0px 20px;
+    }
+
     .tel a,
     .messangers li {
         padding: 3px 0;
     }
+
     .header_content:before {
         display: block;
     }
