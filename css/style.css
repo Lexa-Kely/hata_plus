@@ -76,10 +76,6 @@ header {
     gap: 13px;
 }
 
-.menu_header {
-    flex-direction: column;
-}
-
 .header_content {
     position: relative;
     padding: 40px 0;
@@ -136,7 +132,13 @@ header a {
     line-height: 24px;
 }
 
+.menu_header {
+    flex-direction: column;
+}
+
+
 .mainmenu {
+    flex-direction: column;
     padding: 0px 10px;
 }
 
@@ -650,6 +652,10 @@ nav {
         display: block;
         background-color: #1f1f56;
     }
+    
+.menu_header {
+    flex-direction: row;
+}
 
     .menu_header {
         flex-direction: row;
@@ -679,8 +685,8 @@ nav {
 
     .mainmenu {
         display: flex;
+         flex-direction: row; 
     }
-
     .mainmenu a {
         padding: 19px 19px;
     }
