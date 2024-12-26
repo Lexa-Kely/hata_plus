@@ -1,4 +1,10 @@
+
 h3 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
     padding: 5px 0;
 }
 
@@ -7,11 +13,13 @@ a {
 }
 
 
-.contact {
+.contacts-adress {
     border-bottom: 1px solid #e4e4ec;
+    text-decoration: none;
 }
 
 .number {
+    padding: 2px 0;
     font-size: 18rem;
     line-height: 24rem;
     color: #25252c;
@@ -19,10 +27,26 @@ a {
     font-family: "Arial";
 }
 
-.styledElement {
+span {
     font-size: 14rem;
     line-height: 21rem;
     color: #666666;
+    font-family: "Arial";
+    font-weight: 400;
+}
+
+.adress {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.styled-element {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
     font-family: "Arial";
 }
 
@@ -32,6 +56,18 @@ a {
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
+}
+
+.props p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+    padding: 1px 0;
+}
+
+.number-bank {
+    padding: 5px 0;
 }
 
 iframe {
@@ -46,7 +82,6 @@ iframe {
 }
 
 .map {
-    min-width: 500px;
     position: relative;
     overflow: hidden;
 }
@@ -120,7 +155,7 @@ input[type=checkbox]:checked::before {
 
 input[type=submit] {
     display: inline-block;
-    width: 102%;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 21px;
     background-color: #fd8300;
@@ -155,9 +190,26 @@ textarea {
 }
 
 @media screen and (min-width: 756px) {
-    .around_contacts {
+    .contacts-adress {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    form {
+        width: 45%;
+    }
+
+    .map {
+        max-width: 50%;
+        min-width: 50%;
+    }
+
+    form p {
+        display: inline;
+    }
+
+    input[type=submit] {
+        width: 30%;
     }
 }
 
@@ -166,9 +218,6 @@ textarea {
         height: 335px
     }
 
-    p .tema {
-        width: 464px;
-    }
 
     .forms {
         overflow: hidden;
@@ -177,21 +226,22 @@ textarea {
     form {
         width: 46%;
     }
+
     .map {
         width: 456px;
     }
-
-.tema {
-    width: 95%;
-}
 
     input[type=text],
     input[type=tel] {
         width: 47%;
     }
 
+    #tema{
+        width: 99%;
+    }
+
     textarea {
-        width: 581px;
+        width: 99%;
     }
 
     input[type=submit] {
@@ -205,7 +255,15 @@ textarea {
 }
 
 @media screen and (min-width: 1440px) {
+    .wrapper {
+        max-width: 78%;
+    }
     p .tema {
         width: 581px;
     }
+
+    .map {
+        width: 50%;
+    }
+
 }

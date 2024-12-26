@@ -1,3 +1,7 @@
+.wrapper {
+    width: 97%;
+}
+
 li {
     position: relative;
     font-size: 16rem;
@@ -121,11 +125,13 @@ li:hover .submenu {
     margin-bottom: 25px;
 }
 
+
 table {
     min-width: 815px;
     font-size: 18px;
     width: 100%;
     border-collapse: collapse;
+
 }
 
 thead tr {
@@ -135,6 +141,13 @@ thead tr {
     font-weight: bold;
     border-bottom: 1px solid #274569;
 }
+
+.table-price table tbody tr:hover td {
+    background-color: #fd8300; 
+    color: #fff;
+    border: none;
+}
+
 
 .center {
     text-align: center;
@@ -194,19 +207,10 @@ td:nth-child(5) {
     font-family: "Arial";
 }
 
-
-
-.wrapper {
-    width: 95%;
-}
-
 .header_content::before {
     display: none;
 }
 
-figure {
-    width: 100%;
-}
 
 nav {
     display: none;
@@ -214,8 +218,8 @@ nav {
 
 .table-price {
     overflow-x: scroll;
+    border-radius: 3px;
 }
-
 
 @media screen and (min-width: 768px) {
     nav {

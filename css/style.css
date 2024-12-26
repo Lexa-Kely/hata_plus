@@ -24,13 +24,20 @@ input {
     appearance: none;
 }
 
+.hidden {
+    display: none;
+}
+.icon {
+    width: 17px;
+    height: 17px;
+    fill: #fff;
+}
 .list a {
     font-size: 14px;
     font-family: "Arial";
     line-height: 24px;
     transition: 0.3s;
 }
-
 
 
 li {
@@ -51,7 +58,7 @@ h2 {
     line-height: 24rem;
 }
 
-h3 {
+h4 {
     font-size: 14rem;
     color: #1f1f56;
     font-weight: bold;
@@ -222,6 +229,17 @@ a.sk::before {
 
 }
 
+.header_content:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 49%;
+    width: 2px;
+    height: 52px;
+    background-color: #e4e4ec;
+
+}
+
 .button {
     display: inline-block;
     font-weight: bold;
@@ -278,6 +296,7 @@ main {
 }
 
 .main-info {
+    width: 95%;
     padding: 0 15px;
 }
 
@@ -443,7 +462,7 @@ h2 {
 
 figure {
     position: relative;
-    width: 50%;
+    width: 95%;
 }
 
 figure a {
@@ -642,6 +661,14 @@ nav {
     padding: 10px 0;
 }
 
+@media screen and (min-width: 425px) {
+    figure {
+        width: 45%;
+    }
+    .main-info {
+        width: 70%;
+    }
+} 
 
 @media screen and (min-width: 768px) {
     .wrapper {
@@ -660,16 +687,7 @@ nav {
     .menu_header {
         flex-direction: row;
     }
-
-    .header_content:before {
-        content: "";
-        position: absolute;
-        top: 25%;
-        left: 48%;
-        width: 2px;
-        height: 52px;
-        background-color: #e4e4ec;
-    }
+    
 
     .burger {
         display: none;
@@ -687,9 +705,6 @@ nav {
         display: flex;
          flex-direction: row; 
     }
-    .mainmenu a {
-        padding: 19px 19px;
-    }
 
     .mainmenu {
         padding: 0;
@@ -698,10 +713,6 @@ nav {
     .button-block {
         display: block;
         width: 234px;
-    }
-
-    .header_content:before {
-        left: 50%;
     }
 
     .logo {
@@ -722,7 +733,6 @@ nav {
 
     figure {
         width: 31%;
-
     }
 
     .list {
@@ -756,7 +766,15 @@ nav {
 
     .header_content {
         gap: 16px;
-        justify-content: center;
+    }
+
+    
+    .logo {
+         padding: 0 0px; 
+    }
+
+    .button {
+        padding: 16px 30px;
     }
 
     .main-info {

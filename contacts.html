@@ -64,29 +64,36 @@
     </header>
     <main>
         <h2 class="wrapper">Контакти</h2>
-        <div class="wrapper around_contacts contact">
+        <div class="wrapper contacts-adress">
             <div class="block">
                 <h3>Наш офіс</h3>
-                <a href="#" class="styledElement">с. Війтівці, Хмельницька обл. 27500</a>
+                <a href="#" class="adress">с. Війтівці, Хмельницька обл. 27500</a>
                 <a href="#" class="number">+38(097) 100-25-25</a>
                 <a href="#" class="number">+38(097) 100-25-25</a>
-                <a href="#" class="styledElement"></a>hataplus@hata.com.ua</a>
+                <a href="#" class="styled-element">hataplus@hata.com.ua</a>
             </div>
             <div class="block">
                 <h3>Консультація</h3>
-                <p class="styledElement">менеджер:</p>
-                <a href="#" class="number">+38(067) 123-10-05</a>
-                <p class="styledElement">директор:</p>
-                <a href="#" class="number">+38(068) 950-27-91</a>
+                    <span>менеджер:</span>
+                    <a href="#" class="number">+38(067) 123-10-05</a>
+                    <span>директор:</span>
+                    <a href="#" class="number">+38(068) 950-27-91</a>
             </div>
-            <div class="block">
-                <h3>Реквізити</h3>
-                <p>ЄДРПОУ 60045123, ІПН 991097555173
-                    Св.№59904423</p>
-                <p>Р/р 11137539962221,
-                    Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
+
+            <div class="props">
+                <div>
+                    <h3>Реквізити</h3>
+                    <p>ЄДРПОУ 60045123, ІПН 991097555173</p>
+                    <p>Св.№59904423</p>
+                </div>
+                    <div class="number-bank">
+                        <p>Р/р 11137539962221,</p>
+                        <p>Банк ХФ ПАТ КБ «ПРИВАТБАНК»</p>
+                    </div>
+            
             </div>
-        </div>
+        </div>    
+        </main>
         <div class="wrapper flex forms wrap">
             <div class="map">
                 <iframe
@@ -101,7 +108,7 @@
                 <p><input name="" type="tel" maxlength="15" placeholder="Телефон" required>
                     <label for=""></label>
                 </p>
-                <p><input name="" type="text" maxlength="50" placeholder="Тема повідомлення" required class="tema">
+                <p><input name="" type="text" maxlength="50" placeholder="Тема повідомлення" required id="tema" class="tema">
                     <label for=""></label>
                 </p>
                 <p><textarea name="" id="description" placeholder="Текст" required></textarea>
@@ -152,4 +159,5 @@
         burger.classList.remove('active_burger')
     }
 </script>
+
 </html>
