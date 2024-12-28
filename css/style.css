@@ -354,16 +354,20 @@ a:hover {
 
 .menushka {
     top: 10px;
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
 }
 
 aside {
     display: block;
     overflow: hidden;
     border-radius: 3px;
-    width: 23%;
     min-width: 220px;
     top: 10px;
     position: sticky;
+    padding: 0 30px;
 }
 
 aside li {
@@ -471,6 +475,10 @@ figure a {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+figure:hover h4 {
+    text-decoration: underline;
 }
 
 figure img {
@@ -680,9 +688,9 @@ nav {
         background-color: #1f1f56;
     }
     
-.menu_header {
-    flex-direction: row;
-}
+    .menu_header {
+        flex-direction: row;
+    }
 
     .menu_header {
         flex-direction: row;
@@ -703,12 +711,10 @@ nav {
 
     .mainmenu {
         display: flex;
-         flex-direction: row; 
-    }
-
-    .mainmenu {
+        flex-direction: row; 
         padding: 0;
     }
+
 
     .button-block {
         display: block;
@@ -727,8 +733,12 @@ nav {
     }
 
     .main-info {
-        width: 62%;
+        width: 100%;
         padding: 0;
+    }
+
+    aside {
+        width: 100%;
     }
 
     figure {
@@ -740,13 +750,13 @@ nav {
     }
 
     .wrapper {
-        max-width: 1280px;
+        max-width: 700px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .wrapper {
-        max-width: 1024px;
+        max-width: 810px;
     }
 
     nav {
@@ -798,6 +808,14 @@ nav {
         padding: 19px 0;
     }
 
+    .menushka {
+        width: 27%;
+    }
+
+    aside {
+        padding: 0;
+    }
+
     figure {
         width: 30%;
     }
@@ -805,7 +823,7 @@ nav {
 
 @media screen and (min-width: 1440px) {
     .wrapper {
-        max-width: 1280px;
+        max-width: 1130px;
     }
 
     .mainmenu {
@@ -819,6 +837,10 @@ nav {
 
     .header_content:before {
         display: block;
+    }
+
+    .menushka {
+        width: 17%;
     }
 
     nav {
