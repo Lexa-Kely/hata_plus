@@ -217,8 +217,8 @@ nav {
 }
 
 .table-price {
-    overflow-x: scroll;
-    border-radius: 3px;
+    overflow-x: auto;
+    border-radius: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -246,6 +246,12 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
+    figure {
+        width: 46%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
     figure {
         width: 23%;
     }

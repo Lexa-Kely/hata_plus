@@ -207,10 +207,6 @@ textarea {
     form p {
         display: inline;
     }
-
-    input[type=submit] {
-        width: 30%;
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -233,15 +229,15 @@ textarea {
 
     input[type=text],
     input[type=tel] {
-        width: 47%;
+        width: 95%;
     }
 
     #tema{
-        width: 99%;
+        width: 95%;
     }
 
     textarea {
-        width: 99%;
+        width: 95%;
     }
 
     input[type=submit] {
@@ -265,5 +261,11 @@ textarea {
     .map {
         width: 50%;
     }
+
+    input[type=text],
+    input[type=tel] {
+        width: 47%;
+    }
+
 
 }
